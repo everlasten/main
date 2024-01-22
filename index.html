@@ -1,75 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Zoombies.lol</title>
-		<link href="build/layout.css" rel="stylesheet" type="text/css">
-		<link href="build/windows-98.css" rel="stylesheet" type="text/css">
-		<link href="build/windows-default.css" rel="stylesheet" title="Windows Default" type="text/css">
-		<link href="build/peggys-pastels.css" rel="alternate stylesheet" title="Peggy's Pastels" type="text/css">
-		<link rel="icon" href="images/os-gui-favicon.png" type="image/png">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <title>Zoombies.lol</title>
+    <link href="build/layout.css" rel="stylesheet" type="text/css">
+    <link href="build/windows-98.css" rel="stylesheet" type="text/css">
+    <link href="build/windows-default.css" rel="stylesheet" title="Windows Default" type="text/css">
+    <link href="build/peggys-pastels.css" rel="alternate stylesheet" title="Peggy's Pastels" type="text/css">
+    <link rel="icon" href="images/os-gui-favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-color: #8EABE2; /* Default background color for body */
+            color: var(--InfoText);
+        }
 
-		<style>
-			body {
-				background-color: #8EABE2;
-			}
-			</style>
-		<style>
-			html,
-			body {
-				background-color: #8EABE2;
-				height: 100%;
-				margin: 0;
-				display: flex;
-				flex-direction: column;
-			}
-			body {
-				background-color: #8EABE2;
-				font-family: sans-serif;
-				/*background-color: var(--Background);*/
-				background-color: var(--InfoWindow);
-				color: var(--InfoText);
-				/* background-color: var(--ButtonFace);
-				color: var(--ButtonText); */
-			}
-			main,
-			footer {
-				padding: 1em;
-			}
-			main {
-				flex: 1;
-			}
-			nav {
-				text-align: center;
-				font-size: 2em;
-				margin-top: 1em;
-				margin-bottom: 1em;
-			}
-			footer {
-				flex: 0 0 auto;
-				text-align: center;
-				background: var(--ButtonFace);
-				color: var(--ButtonText);
-			}
-			button:not(.window-button) {
-				padding: 3px;
-			}
-			p > button {
-				vertical-align: bottom; /* so text in a paragraph following the button flows with consistent line spacing (vertical rhythm) */
-			}
-			.window-content {
-				padding: 1em;
-			}
-			#buttons-demo td button {
-				width: 100%;
-				max-width: 200px;
-			}
-			#buttons-demo,
-			#insets-outsets-demo {
-				border-collapse: collapse;
-			}
-			#buttons-demo td,
+        main,
+        footer {
+            padding: 1em;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        nav {
+            text-align: center;
+            font-size: 2em;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        footer {
+            flex: 0 0 auto;
+            text-align: center;
+            background: var(--ButtonFace);
+            color: var(--ButtonText);
+        }
+
+        button:not(.window-button) {
+            padding: 3px;
+        }
+
+        p > button {
+            vertical-align: bottom;
+        }
+
+        .window-content {
+            padding: 1em;
+        }
+
+        #buttons-demo td button {
+            width: 100%;
+            max-width: 200px;
+        }
+
+        #buttons-demo,
+        #insets-outsets-demo {
+            border-collapse: collapse;
+        }
+
+        #buttons-demo td,
+        #insets-outsets-demo td {
+            padding: 0.5em;
+        }
+
+        /* Set background color for the whole page */
+        html, body {
+            background-color: #8EABE2;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
 			#insets-outsets-demo td {
 				padding: 0.5em;
 			}
