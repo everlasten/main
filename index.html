@@ -133,7 +133,7 @@
 			#logo-heading {
 				margin: 0.1em 0;
 				line-height: 1;
-				font-size: min(100px, 12vw);
+				font-size: min(135px, 12vw);
 				text-align: left;
 				white-space: nowrap;
 				/* picked for metric compatibility - with each other, mainly; it's not that good of a match though for Laser Corps, the font I used for the logo */
@@ -151,33 +151,6 @@
 				background-size: contain;
 				background-position: center;
 			}
-
-			/* Why two elements? Well if you make part of the link fly away, it makes clicking the link unreliable,
-			given that the link is no longer under your mouse. So if you're animating a link or button,
-			it's useful to separate the click target from the visual element that is animating. */
-			#spaceship-graphic {
-				display: inline-block;
-				width: 8em;
-				height: calc(8em * (164 / 241));
-				vertical-align: middle;
-				position: relative;
-			}
-			#spaceship-graphic::after {
-				content: "";
-				display: inline-block;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				background: url("https://i.postimg.cc/pTCqBxL0/Spaceship-tut.png");
-				width: 164px;
-				height: 241px;
-				transform: translate(-50%, -50%) scale(0.5) rotate(.25turn);
-				transition: transform 1s;
-			}
-			#spaceship-link:active #spaceship-graphic::after,
-			#spaceship-link:focus #spaceship-graphic::after {
-				transform: translate(-50%, -50%) translateX(460px) scale(0.3) rotate(.25turn);
-			}
 		</style>
 	</head>
 	<body>
@@ -190,7 +163,7 @@
 			<h1 id="logo-heading"><span>ZOOMBIES.LOL</span></h1>
 			<p>
 				<b>Zoombies.lol</b> is a website about mimicking the Windows 98 operating system-like user interface.
-				The default theme is an accurate recreation of Windows 98's appearance.
+				The default theme is an accurate recreation of Windows 98's appearance. Don't ask why it's called Zoombies.lol.
 			</p>
 			<p>
 				Thanks for checking out my first website! If you feel touched and want to help support my family and me, please consider making a donation. Your generosity truly makes a difference! 💕  <a href="https://www.justgiving.com/crowdfunding/zoombieslol">Make our day!</a>
